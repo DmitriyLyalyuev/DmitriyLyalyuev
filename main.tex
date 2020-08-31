@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX:
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+    \textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+\clubpenalty=10000
+\widowpenalty=10000
+\brokenpenalty=10000
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%                      % Change font of \section command
+    \usefont{OT1}{phv}{b}{n}%       % bch-b-n: CharterBT-Bold font
+    \sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}          % Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}       % Vertical space macro
+\newcommand{\emptystring}{\vspace*{2em}}
+
+\newcommand{\MyName}[1]{ % Name
+        \Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+        \par \normalsize \normalfont}
+
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+        \large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+        \par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+        \noindent\hangindent=2em\hangafter=0 % Indentation
+        \parbox{\spacebox}{        % Box to align text
+        \textit{#1}}               % Entry name (birth, address, etc.)
+        \hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+        \noindent\hangindent=2em\hangafter=0 % Indentation
+        \parbox{\spacebox}{        % Box to align text
+        \textit{#1}}               % Entry name (birth, address, etc.)
+        \hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\EducationEntry}[4]{
+        \noindent \textbf{#1} \hfill      % Study
+        \colorbox{Black}{%
+            \parbox{6em}{%
+            \hfill\color{White}#2}} \par  % Duration
+        \noindent \textit{#3} \par        % School
+        \noindent\hangindent=2em\hangafter=0 \small #4 % Description
+        \normalsize \par}
+
+\newcommand{\WorkEntry}[4]{               % Same as \EducationEntry
+        \noindent \textbf{#1} \hfill      % Jobname
+        \colorbox{Black}{\color{White}#2} \par  % Duration
+        \noindent \textit{#3} \par              % Company
+        \noindent\hangindent=2em\hangafter=0 \small #4 % Description
+        \normalsize \par}
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%   \vspace*{-2em}
+%       \includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+\MyName{Dmitriy Lialiuiev}
+\MySlogan{DevOps evangelist, System administrator}
+
+%\sepspace
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal details}{}
+
+\PersonalEntry{Birth}{August 21, 1980}
+%\PersonalEntry{Address}{111 First St, New York}
+\PersonalEntry{Phone}{(066) 532-29-62}
+\PersonalEntry{Mail}{\url{dmitriy@lyalyuev.info}}
+\PersonalEntry{Website}{\url{https://lyalyuev.info}}
+\sepspace
+\PersonalEntry{Objective}{Head of DevOps}
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{}
+
+\SkillsEntry{OS}{Debian like, Redhat like}
+\SkillsEntry{Containerization}{Docker, Docker Swarm mode, Kubernetes}
+\SkillsEntry{Virtualization}{AWS, Digital Ocean, OpenVZ, Virtualbox, VMWare, Vagrant}
+\SkillsEntry{Orchestration}{Ansible, Opscode Chef, Fabric, Terraform, Packer}
+\SkillsEntry{Languages}{Bash, Perl, PHP, Ruby, Python}
+\SkillsEntry{Networking}{DNS, DHCP, FTP, TFTP, Iptables, SSH}
+\SkillsEntry{Web}{Nginx, Apache, PHP-FPM, PHP-FCGI,}
+\SkillsEntry{}{Unicorn, Thin, Puma, UWSGI, Gunicorn}
+\SkillsEntry{DB}{MySQL, PostgreSQL, MongoDB, Memcached, Redis}
+\SkillsEntry{Mail}{Postfix, Cyrus, Dovecot, Spamassassin, Amavisd-new}
+\SkillsEntry{CI}{Jenkins, Bamboo, GitLab-CI, Drone}
+\SkillsEntry{Deploy}{Capistrano, Ansible, Chef, Fabric}
+\SkillsEntry{Other}{OpenLDAP, Nagios, Asterisk, Tomcat7/8}
+\sepspace
+
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Work experience}{}
+
+\WorkEntry{Head of DevOps}{2018 - present}{Faria Education Group}{Setup, configure and support infrastructure. Goals: Speed up deploy process from dozens of minutes to 90 seconds. Stabilize access of users from the non-China region to Chinese DC with bypass Great China Firewall. Reduce costs on AWS up to 20\%.}
+\WorkEntry{DevOps}{2018 - 2018}{Archer Software}{Setup, configure and support project's servers, applications deployment. Goals: Import whole infrastructure to Terraform, implement monitoring of services.}
+\WorkEntry{DevOps}{2015 - 2018}{Healthjoy LLC.}{Setup, configure and support all servers of the company, deploy applications. Goals: Automated setup and servers configuration, effectively implemented Ansible in working process as more simply and flexible alternative of Chef. Created Docker Swarm cluster for development/staging/production environments with automated application deployment.\newline Migration all services from SoftLayer (bare metal) to Amazon Web Services with Docker Swarm cluster.}
+\newpage
+\WorkEntry{DevOps}{2012 - 2015}{Anadea Inc.}{Setup, configure and support all servers of the company and clients, deploy environment and applications developed with Ruby and Java. Goals: Automated setup and servers configuration, effectively implemented Ansible in working process as more simply and flexible alternative of Chef, help with Capistrano configuration for applications deployments, developed gem 'Leipreachan' for automated DB backups.}
+\WorkEntry{Support engineer}{2011 - 2012}{NIC.ua LLC.}{Help clients with registration, renew and transfer domains, configuring DNS servers, working with hosting.}
+\WorkEntry{Co-founder}{2008 - 2010}{"In LAN" network}{System administration of all servers (hosting, mail, DNS, Routing, IPTV, billing system, games servers etc.) Goals: Built a new business from scratch, developed and implemented some billing modules, hosting of company sites, developed IPTV service.}
+\WorkEntry{Engineer}{2005 - 2007}{ISP "Doris"}{Client support, devices configuration}
+\WorkEntry{System administrator}{2005 - 2007}{"Ur@n" network}{Support, install and configuration of servers and billing system. Goals: Developed some billing modules, configured access to the Internet, configure and support internal services.}
+\WorkEntry{Web developer}{2004 - 2005}{Security shop "Arsenal"}{}
+\WorkEntry{System administrator}{2002 - 2004}{JSC "Ukrsotsbank"}{}
+\WorkEntry{Co-founder}{2000 - 2002}{Service center "s.Mobi"}{}
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+
+\EducationEntry{Lawyer}{1997 - 2003}{Belorussian institute of law}{}
+\sepspace
+
+\EducationEntry{Networking and system administration}{2003 - 2005}{IT Academy "Step"}{}
+
+%%% Languages
+%%% ------------------------------------------------------------
+\NewPart{Languages}{}
+
+\SkillsEntry{Russian}{native}
+\SkillsEntry{Ukrainian}{native}
+\SkillsEntry{English}{intermediate}
+\sepspace
+
+%%% References
+%%% ------------------------------------------------------------
+%\NewPart{References}{}
+%\url{https://github.com/DmitriyLyalyuev}
+\end{document}
