@@ -62,9 +62,9 @@ jobs:
         with:
           # Берем результат из step с id=vars (см. выше).
           # Получим теги вида “my_doc-<дата билда>-<первые 8 символов из sha коммита>
-          tag_name: v0.1.0
+          tag_name: latest
           # Имя, которое будет высвечиваться в релизе
-          release_name: My Actions document (version ${{ steps.vars.outputs.date }})
+          release_name: My Curriculum Vitae (version ${{ steps.vars.outputs.date }})
           # Наш релиз не набросок и не пререлиз, так что оба в false
           draft: false
           prerelease: false
