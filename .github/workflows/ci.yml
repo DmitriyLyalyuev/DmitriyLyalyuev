@@ -53,6 +53,10 @@ jobs:
         with:
           # Тот самый ключ, который мы указывали в upload-artifact
           name: cv
+      - name: Delete
+        uses: ame-yu/action-delete-latest-release@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
         uses: actions/create-release@v1
         id: create_release
