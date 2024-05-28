@@ -7,6 +7,8 @@ DevOps / System administrator
 *   🖥️  See my portfolio at [lyalyuev.info](http://lyalyuev.info)
 *   ✉️  You can contact me at [dmitriy@lyalyuev.info](mailto:dmitriy@lyalyuev.info)
 *   🚀  I'm currently working on [Funroutine Inc.](http://workflowy.com)
+*   📃  My CV can be downloaded by [link][CV]
+
 
 <a href="https://www.github.com/DmitriyLyalyuev" target="_blank" rel="noreferrer"><img
                   src="https://img.shields.io/github/followers/DmitriyLyalyuev?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
@@ -49,3 +51,6 @@ DevOps / System administrator
 
 <a
   href="http://www.github.com/DmitriyLyalyuev"><img src="https://github-readme-stats.vercel.app/api?username=DmitriyLyalyuev&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="DmitriyLyalyuev's GitHub stats" /></a>
+
+
+[CV]: https://github.com/DmitriyLyalyuev/DmitriyLyalyuev/releases/download/latest/cv.pdf
