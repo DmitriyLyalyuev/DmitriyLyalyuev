@@ -6,7 +6,9 @@ DevOps / System administrator
 
 *   🖥️  See my portfolio at [lyalyuev.info](http://lyalyuev.info)
 *   ✉️  You can contact me at [dmitriy@lyalyuev.info](mailto:dmitriy@lyalyuev.info)
-*   🚀  I'm currently working on [Funroutine Inc.](http://workflowy.com)<a href="https://www.github.com/DmitriyLyalyuev" target="_blank" rel="noreferrer"><img
+*   🚀  I'm currently working on [Funroutine Inc.](http://workflowy.com)
+
+<a href="https://www.github.com/DmitriyLyalyuev" target="_blank" rel="noreferrer"><img
                   src="https://img.shields.io/github/followers/DmitriyLyalyuev?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
 
 ### Skills
