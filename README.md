@@ -4,7 +4,6 @@ Hi 👋 My name is Dmitriy Lyalyuev
 DevOps / System administrator
 -----------------------------
 
-*   🖥️  See my portfolio at [lyalyuev.info](http://lyalyuev.info)
 *   ✉️  You can contact me at [dmitriy@lyalyuev.info](mailto:dmitriy@lyalyuev.info)
 *   🚀  I'm currently working on [Funroutine Inc.](http://workflowy.com)
 *   📃  My CV can be downloaded by [link][CV]
